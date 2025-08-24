@@ -1,0 +1,43 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            counter-reset: section; /* Initialize section counter */
+        }
+        h1 {
+            counter-reset:subsection; /* Initialize subsection counter */
+        }
+        h1::before{
+            counter-increment:section;
+            content:"Section " counter(section) " : ";
+            font-weight: bold  ;
+        }
+        h2::before{
+            counter-increment:subsection;
+            content:"Subsection " counter(subsection) " : ";
+            font-weight:bold ;
+        }
+    </style>
+</head>
+<body>
+    <h1>Introduction</h1>
+    <p>This is the introduction section.</p>
+
+    <h2>Background</h2>
+    <p>This section provides background information.</p>
+
+    <h2>Methodology</h2>
+    <p>This section describes the methodology used in the study.</p>
+
+    <h1>Results</h1>
+    <p>This section presents the results of the study.</p>
+
+    <h2>Conclusion</h2>
+    <p>This section summarizes the findings and conclusions.</p>    
+    
+</body>
+</html>
