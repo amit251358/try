@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numbering</title>
+    <style>
+        body {
+            counter-reset: section; /* Initialize section counter */
+        }
+        h2::before {
+            counter-increment: section; /* Increment section counter */
+            content: "Section " counter(section) ": "; /* Display section number */
+            font-weight: bold;
+        }
+        </style>
+</head>
+<body>
+    <h2>Introduction</h2>
+    <p>This is the introduction section.</p>
+
+    <h2>Background</h2>
+    <p>This section provides background information.</p>
+
+    <h2>Methodology</h2>
+    <p>This section describes the methodology used in the study.</p>
+
+    <h2>Results</h2>
+    <p>This section presents the results of the study.</p>
+
+    <h2>Conclusion</h2>
+    <p>This section summarizes the findings and conclusions.</p>
+    
+</body>
+</html>
