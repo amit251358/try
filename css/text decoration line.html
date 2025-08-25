@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Decoration line</title>
+    <style>
+        p{
+            text-decoration:underline;
+            text-decoration-color: red;
+            text-decoration-thickness: 20%;
+        }
+        p + p {
+            text-decoration-line: line-through;
+            text-decoration-color:blue ;
+            text-decoration-thickness: 5px;
+        }
+        p + p + p {
+            text-decoration-line: overline;
+            text-decoration-color:green ;
+            text-decoration-thickness: 5%;
+        } 
+        p + p + p + p {
+           text-decoration-line:none;
+            text-decoration-color:purple ;
+            text-decoration-thickness: 10px;
+        }
+        p + p + p + p + p {
+            text-decoration-line:initial;
+            text-decoration-color:orange ;
+            text-decoration-thickness: 15px;
+        }
+        p + p + p + p + p + p {
+            text-decoration-line:inherit;
+            text-decoration-color:brown ;
+            text-decoration-thickness: 25px;
+        }
+    </style>
+</head>
+<body style="text-decoration-color: blue;">
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    <p>This is a paragraph.</p>
+    <p>This is another paragraph.</p>
+    
+
+    
+</body>
+</html>
